@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Escolha de Player</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    main{
+        background-color: rgb(55, 185, 185);
+		height: 100vh;
+    }
+    section{
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section h1{
+        font-size: 38px;
+    }
+    .box-player{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-player a{
+        color: black;
+        text-decoration: none;
+    }
+
+    #singleplayer, #multiplayer{
+        cursor: pointer;
+        background-color: rgb(255, 203, 61);
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 25px;
+    }
+    #singleplayer:hover, #multiplayer:hover{
+        transform: scale(1.1);
+    }
+    i{
+        font-size: 100px;
+    }
+
+    
+    @media (max-width: 769px){
+        #singleplayer, #multiplayer{
+        cursor: pointer;
+        background-color: rgb(255, 203, 61);
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 18px;
+        }
+        i{
+            font-size: 70px;
+        }
+    }
+
+   @media (max-width: 320px){
+        main{
+            background-color: rgb(55, 185, 185);
+            height: 100vh;
+        }
+        section{
+            height: 33vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 25px;
+        }
+        section h1{
+            font-size: 38px;
+        }
+        .box-player{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #singleplayer, #multiplayer{
+            cursor: pointer;
+            background-color: rgb(255, 203, 61);
+            width: 118px;
+            height: 118px;
+            border-radius: 10px;
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 15px;
+        }
+
+       
+        #singleplayer, #multiplayer{
+            transform: scale(1.1);
+        }
+        i{
+            font-size: 35px;
+        }
+    }
+</style>
+<body>
+
+    <main>
+        <section>
+            <h1 class="title">Jogo da velha #</h1>
+        </section>
+           
+        <section>     
+            <div class="box-player">
+
+               <a href="1player.html">
+                    <div id="singleplayer">
+                        <i class="bi bi-person-fill"></i>
+                        <h3>1 Jogador</h3>
+                    </div>
+                </a> 
+
+                <a href="2player.html">
+                    <div id="multiplayer">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>2 Jogadores</h3>
+                    </div>
+                </a> 
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
